@@ -190,7 +190,7 @@ export const tramites = [
       "Aprobación de Trabajo de Investigación.",
       "Constancias de no adeudar a la universidad."
     ],
-    pdfUrl: "/wp-content/themes/educacion-primaria/dist/Requisitos_Bachiller.pdf"
+    pdfUrl: `${import.meta.env.BASE_URL}Requisitos_Bachiller.pdf`
   },
   {
     id: "titulo",
@@ -202,6 +202,6 @@ export const tramites = [
       "Constancias de no adeudar a la universidad.",
       "Ejemplares impresos y digitales del trabajo de investigación."
     ],
-    pdfUrl: "/wp-content/themes/educacion-primaria/dist/Requisitos_Titulo.pdf"
+    pdfUrl: `${import.meta.env.BASE_URL}Requisitos_Titulo.pdf`
   }
 ];
