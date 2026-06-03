@@ -69,7 +69,7 @@ export default function Navbar() {
     <header 
       className={clsx(
         'sticky top-0 z-50 w-full transition-all duration-300',
-        scrolled ? 'bg-white shadow-md' : 'bg-white'
+        scrolled ? 'bg-pucp-blue-dark shadow-md' : 'bg-pucp-blue-dark'
       )}
     >
       {/* Top Bar */}
@@ -110,10 +110,10 @@ export default function Navbar() {
               <img src={logo} alt="Logo UNT" className="h-full w-auto object-contain drop-shadow-md" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-bold text-[#002D62] tracking-tight leading-tight text-lg md:text-xl">
+              <span className="font-display font-bold text-white tracking-tight leading-tight text-lg md:text-xl">
                 Educación Primaria
               </span>
-              <span className="text-xs text-gray-500 font-body hidden sm:block uppercase tracking-wider font-semibold mt-0.5">
+              <span className="text-xs text-white/80 font-body hidden sm:block uppercase tracking-wider font-semibold mt-0.5">
                 Universidad Nacional
               </span>
             </div>
@@ -128,7 +128,7 @@ export default function Navbar() {
                   end={link.path === '/'}
                   className={({ isActive }) => clsx(
                   'font-body font-medium text-[15px] transition-colors flex items-center px-4 py-5 md:py-6',
-                  isActive ? 'bg-[#F58220] text-white' : 'text-[#002D62] hover:bg-gray-100'
+                  isActive ? 'bg-[#D4A017] text-white' : 'text-white hover:bg-white/10'
                   )}
                 >
                   {link.name}
@@ -159,7 +159,7 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button 
-            className="lg:hidden text-[#002D62] p-2 focus:outline-none"
+            className="lg:hidden text-white p-2 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
