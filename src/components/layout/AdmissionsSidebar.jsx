@@ -77,11 +77,16 @@ export default function AdmissionsSidebar() {
 
       {/* BARRA LATERAL (Sidebar) */}
       <motion.aside
-        className="fixed left-0 top-0 h-full z-[70] shadow-2xl overflow-hidden text-white border-r border-white/10"
+        className="fixed left-0 z-[70] shadow-2xl overflow-hidden text-white border border-white/10 border-l-0"
         initial={false}
         animate={{
           // En móvil toma el 85% del ancho si está abierto. En PC, varía entre 22rem y 4rem.
           width: isMobile ? (isMobileOpen ? '85%' : '0px') : (isHovered ? '24rem' : '4rem'),
+          height: isMobile ? '100vh' : '65vh',
+          top: isMobile ? '0%' : '55%',
+          y: isMobile ? '0%' : '-50%',
+          borderTopRightRadius: isMobile ? '0px' : '24px',
+          borderBottomRightRadius: isMobile ? '0px' : '24px',
           backgroundColor: (isHovered || isMobileOpen) ? '#F58220' : '#002D62',
         }}
         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
@@ -125,7 +130,7 @@ export default function AdmissionsSidebar() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="absolute left-0 w-16 top-28 flex justify-center pointer-events-none"
+              className="absolute left-0 w-16 top-24 bottom-0 flex justify-center items-center pointer-events-none pb-8"
             >
               <span className="[writing-mode:vertical-lr] rotate-180 font-bold tracking-[0.25em] text-white/50 text-sm">
                 MODALIDADES

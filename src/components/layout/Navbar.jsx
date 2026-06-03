@@ -3,7 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import clsx from 'clsx';
 import { Phone, Mail, Search, ChevronDown, Menu, X } from 'lucide-react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logoUNT.png';
 import Breadcrumbs from './Breadcrumbs';
 import AnnouncementBanner from './AnnouncementBanner';
 
@@ -69,7 +69,7 @@ export default function Navbar() {
     <header 
       className={clsx(
         'sticky top-0 z-50 w-full transition-all duration-300',
-        scrolled ? 'bg-pucp-blue-dark shadow-md' : 'bg-pucp-blue-dark'
+        scrolled ? 'bg-white shadow-md' : 'bg-white'
       )}
     >
       {/* Top Bar */}
@@ -105,30 +105,30 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo / Marca */}
-          <Link to="/" className="flex items-center gap-3 group py-3">
-            <div className="h-16 md:h-20 flex items-center justify-center transition-transform group-hover:scale-105">
+          <Link to="/" className="flex items-center gap-3 md:gap-4 group py-3">
+            <div className="h-14 md:h-16 flex items-center justify-center transition-transform group-hover:scale-105">
               <img src={logo} alt="Logo UNT" className="h-full w-auto object-contain drop-shadow-md" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-bold text-white tracking-tight leading-tight text-lg md:text-xl">
+              <span className="font-display font-bold text-gray-900 tracking-tight leading-tight text-lg md:text-xl">
                 Educación Primaria
               </span>
-              <span className="text-xs text-white/80 font-body hidden sm:block uppercase tracking-wider font-semibold mt-0.5">
+              <span className="text-xs text-gray-600 font-body hidden sm:block uppercase tracking-wider font-semibold mt-0.5">
                 Universidad Nacional
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1 bg-[#002D62] rounded-2xl px-2 py-1.5 shadow-md">
             {NAV_LINKS.map((link) => (
-              <div key={link.name} className="relative group h-full flex">
+              <div key={link.name} className="relative group flex">
                 <NavLink
                   to={link.path}
                   end={link.path === '/'}
                   className={({ isActive }) => clsx(
-                  'font-body font-medium text-[15px] transition-colors flex items-center px-4 py-5 md:py-6',
-                  isActive ? 'bg-[#D4A017] text-white' : 'text-white hover:bg-white/10'
+                  'font-body font-medium text-[15px] transition-colors flex items-center px-4 py-2 md:py-2.5 rounded-xl',
+                  isActive ? 'bg-[#F58220] text-white' : 'text-white hover:bg-white/10'
                   )}
                 >
                   {link.name}
@@ -139,7 +139,7 @@ export default function Navbar() {
                 
                 {/* Dropdown */}
                 {link.sublinks && (
-                  <div className="absolute top-full left-0 w-64 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50">
+                  <div className="absolute top-full left-0 mt-3 w-64 bg-white shadow-xl rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="flex flex-col">
                       {link.sublinks.map((sublink) => (
                         <Link
@@ -159,7 +159,7 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button 
-            className="lg:hidden text-white p-2 focus:outline-none"
+            className="lg:hidden text-gray-900 p-2 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
