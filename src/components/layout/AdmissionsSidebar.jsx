@@ -91,29 +91,33 @@ export default function AdmissionsSidebar() {
         {/* Contenedor interno con ancho fijo para evitar que el texto se deforme al achicarse */}
         <div className="w-[24rem] h-full flex flex-col relative pt-6 pl-4 pr-6 pb-6 max-w-full">
           
-          {/* Botón de cerrar en versión móvil */}
-          {isMobile && isMobileOpen && (
-            <button 
-              onClick={() => setIsMobileOpen(false)} 
-              className="absolute top-4 right-4 p-2 bg-black/10 hover:bg-black/20 rounded-full transition-colors z-10"
-            >
-              <X className="w-6 h-6" />
-            </button>
-          )}
-
           {/* Cabecera del Sidebar */}
-          <div className="flex items-center gap-4 mb-8 shrink-0 relative z-10">
-            <div className="w-8 h-8 shrink-0 flex items-center justify-center">
-              <GraduationCap className="w-8 h-8 text-white" />
+          <div className="flex items-center justify-between mb-8 shrink-0 relative z-20">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 shrink-0 flex items-center justify-center">
+                <GraduationCap className="w-8 h-8 text-white" />
+              </div>
+              <motion.h2
+                className="font-display font-black text-2xl tracking-wide"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: (isHovered || isMobileOpen) ? 1 : 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                ¿Cómo Postular?
+              </motion.h2>
             </div>
-            <motion.h2
-              className="font-display font-black text-2xl tracking-wide"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: (isHovered || isMobileOpen) ? 1 : 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              ¿Cómo Postular?
-            </motion.h2>
+
+            {/* Botón de cerrar en versión móvil mejorado */}
+            {isMobile && isMobileOpen && (
+              <button 
+                type="button"
+                onClick={() => setIsMobileOpen(false)} 
+                className="p-2 bg-black/20 hover:bg-black/30 active:bg-black/40 rounded-full transition-colors cursor-pointer pointer-events-auto shrink-0"
+                aria-label="Cerrar menú"
+              >
+                <X className="w-6 h-6 text-white" />
+              </button>
+            )}
           </div>
 
           {/* Texto vertical cuando está colapsado (Solo PC) */}
