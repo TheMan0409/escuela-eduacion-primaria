@@ -79,7 +79,7 @@ const CURRICULUM_DATA = [
   { id: 'EP-15', name: 'Práctica Pre-Profesional III', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VII', isElective: false, description: 'Intervención directa en el aula de nivel primaria, diseño y conducción del aprendizaje.' },
   { id: 'EP-16', name: 'Proyectos Productivos', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: false, description: 'Diseño e implementación de proyectos productivos escolares.' },
   { id: 'EP-17', name: 'Didáctica de la Ciencia y Tecnología II', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VII', isElective: false, description: 'Estrategias avanzadas y proyectos de experimentación científica escolar.' },
-  { id: 'E-7', name: 'Didáctica del Idioma Inglés para Niños III', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Práctica y aplicación de estrategias avanzadas de inglés para primaria.' },
+  { id: 'E-7', name: 'Didáctica del Idioma Inglés para Niños III', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Práctica y aplicación de strategies avanzadas de inglés para primaria.' },
   { id: 'E-8', name: 'Didáctica de la Danza para Niños III', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Desarrollo de proyectos coreográficos y su evaluación pedagógica.' },
   { id: 'E-9', name: 'Didáctica de la Enseñanza de las TICs para Niños III', type: 'especialidad', credits: 0, hoursT: 3, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Creación de recursos educativos digitales e interactivos.' },
 
@@ -254,6 +254,9 @@ export default function MallaCurricular() {
         attributionPosition="bottom-right"
         nodesDraggable={false}
         connectable={false}
+        translateExtent={[[-500, -300], [3400, 1200]]}
+        minZoom={0.4}
+        maxZoom={1.5}
       >
         <Background color="#cbd5e1" gap={20} size={1} />
         <Controls className="!bg-white !shadow-lg !border-slate-100 !rounded-lg" />

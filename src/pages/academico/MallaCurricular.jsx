@@ -59,7 +59,50 @@ const CURRICULUM_DATA = [
   { id: 'EP-6', name: 'Didáctica de las Ciencias Sociales I', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo V', isElective: false, description: 'Construcción de la identidad y participación democrática en el nivel primario.' },
   { id: 'EP-7', name: 'Didáctica de la Matemática I', type: 'especialidad', credits: 4, hoursT: 3, hoursP: 1, cycle: 'Ciclo V', isElective: false, description: 'Problemas de regularidad, equivalencia, cambio, forma y localización.' },
   { id: 'EP-8', name: 'Atención a Niños con Habilidades Diferentes', type: 'especialidad', credits: 4, hoursT: 3, hoursP: 2, cycle: 'Ciclo V', isElective: false, description: 'Enfoques inclusivos, adaptaciones curriculares y necesidades educativas especiales.' },
-  { id: 'E-3', name: 'Didáctica del Idioma Inglés para Niños I', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo V', isElective: true, description: 'Módulos de didáctica comunicativa de lenguas extranjeras aplicadas a infantes.' }
+  { id: 'E-3', name: 'Didáctica del Idioma Inglés para Niños I', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo V', isElective: true, description: 'Módulos de didáctica comunicativa de lenguas extranjeras aplicadas a infantes.' },
+
+  // CICLO VI (X = 1600)
+  { id: 'EP-9', name: 'Didáctica de la Ciencia y Tecnología I', type: 'especialidad', credits: 4, hoursT: 3, hoursP: 2, cycle: 'Ciclo VI', isElective: false, description: 'Estudio y aplicación de metodologías para la enseñanza de las ciencias.' },
+  { id: 'EP-10', name: 'Didáctica de la Producción de Textos', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VI', isElective: false, description: 'Estrategias para el desarrollo de la escritura y producción textual en primaria.' },
+  { id: 'ES-16', name: 'Investigación Integral III', type: 'especifico', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VI', isElective: false, description: 'Desarrollo de competencias investigativas y metodologías cuantitativas/cualitativas.' },
+  { id: 'EP-11', name: 'Práctica Pre-Profesional II', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VI', isElective: false, description: 'Práctica en instituciones educativas para la observación y diseño de sesiones.' },
+  { id: 'EP-12', name: 'Didáctica de la Matemática II', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VI', isElective: false, description: 'Estrategias metodológicas para la enseñanza de operaciones y problemas complejos.' },
+  { id: 'EP-13', name: 'Didáctica de las Ciencias Sociales II', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VI', isElective: false, description: 'Profundización en la enseñanza de la historia, geografía y economía.' },
+  { id: 'E-4', name: 'Didáctica del Idioma Inglés para Niños II', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VI', isElective: true, description: 'Metodologías para la enseñanza del inglés como segunda lengua en niños.' },
+  { id: 'E-5', name: 'Didáctica de la Danza para Niños II', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VI', isElective: true, description: 'Uso de la danza y expresión corporal como recurso pedagógico.' },
+  { id: 'E-6', name: 'Didáctica de las TICs para Niños II', type: 'especialidad', credits: 0, hoursT: 1, hoursP: 4, cycle: 'Ciclo VI', isElective: true, description: 'Integración de tecnologías de la información en el proceso de enseñanza.' },
+
+  // CICLO VII (X = 1920)
+  { id: 'ES-17', name: 'Informática Educativa', type: 'especifico', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VII', isElective: false, description: 'Uso de herramientas informáticas aplicadas a la gestión y procesos educativos.' },
+  { id: 'EP-14', name: 'Educación Básica Alternativa', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: false, description: 'Fundamentos y didáctica para la educación de jóvenes y adultos.' },
+  { id: 'ES-18', name: 'Investigación Integral IV', type: 'especifico', credits: 4, hoursT: 3, hoursP: 2, cycle: 'Ciclo VII', isElective: false, description: 'Elaboración y ejecución de proyectos de investigación educativa.' },
+  { id: 'EP-15', name: 'Práctica Pre-Profesional III', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VII', isElective: false, description: 'Intervención directa en el aula de nivel primaria, diseño y conducción del aprendizaje.' },
+  { id: 'EP-16', name: 'Proyectos Productivos', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: false, description: 'Diseño e implementación de proyectos productivos escolares.' },
+  { id: 'EP-17', name: 'Didáctica de la Ciencia y Tecnología II', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VII', isElective: false, description: 'Estrategias avanzadas y proyectos de experimentación científica escolar.' },
+  { id: 'E-7', name: 'Didáctica del Idioma Inglés para Niños III', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Práctica y aplicación de strategies avanzadas de inglés para primaria.' },
+  { id: 'E-8', name: 'Didáctica de la Danza para Niños III', type: 'especialidad', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Desarrollo de proyectos coreográficos y su evaluación pedagógica.' },
+  { id: 'E-9', name: 'Didáctica de la Enseñanza de las TICs para Niños III', type: 'especialidad', credits: 0, hoursT: 3, hoursP: 1, cycle: 'Ciclo VII', isElective: true, description: 'Creación de recursos educativos digitales e interactivos.' },
+
+  // CICLO VIII (X = 2240)
+  { id: 'ES-19', name: 'Entornos Virtuales para la Enseñanza Aprendizaje', type: 'especifico', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VIII', isElective: false, description: 'Gestión de plataformas virtuales, e-learning y recursos online.' },
+  { id: 'EP-18', name: 'Educación Rural', type: 'especialidad', credits: 4, hoursT: 4, hoursP: 2, cycle: 'Ciclo VIII', isElective: false, description: 'Características, desafíos y adaptaciones curriculares para la escuela rural.' },
+  { id: 'ES-20', name: 'Investigación Integral V', type: 'especifico', credits: 3, hoursT: 3, hoursP: 1, cycle: 'Ciclo VIII', isElective: false, description: 'Sistematización de resultados y redacción del informe de investigación.' },
+  { id: 'EP-19', name: 'Práctica Pre-Profesional IV', type: 'especialidad', credits: 3, hoursT: 0, hoursP: 4, cycle: 'Ciclo VIII', isElective: false, description: 'Consolidación de la práctica docente en diversas realidades y contextos.' },
+  { id: 'EP-20', name: 'Didáctica de Educación Física', type: 'especialidad', credits: 3, hoursT: 2, hoursP: 4, cycle: 'Ciclo VIII', isElective: false, description: 'Psicomotricidad, juegos y deportes adaptados al nivel primario.' },
+  { id: 'ES-21', name: 'Proyectos de Inversión e Innovación Educativa', type: 'especifico', credits: 3, hoursT: 2, hoursP: 2, cycle: 'Ciclo VIII', isElective: false, description: 'Formulación de proyectos orientados a la mejora continua y obtención de fondos.' },
+  { id: 'E-10', name: 'Práctica en Instituciones Educativas Bilingüe: Español Inglés', type: 'especialidad', credits: 0, hoursT: 1, hoursP: 4, cycle: 'Ciclo VIII', isElective: true, description: 'Práctica preprofesional en aulas bilingües.' },
+  { id: 'E-11', name: 'Práctica en la II.EE: Taller de Danzas', type: 'especialidad', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo VIII', isElective: true, description: 'Aplicación práctica de talleres artísticos en el centro educativo.' },
+  { id: 'E-12', name: 'Práctica en II.EE. Laboratorio de Cómputo/ Aula de Innovación', type: 'especialidad', credits: 0, hoursT: 1, hoursP: 4, cycle: 'Ciclo VIII', isElective: true, description: 'Gestión y docencia en el aula de innovación pedagógica.' },
+
+  // CICLO IX (X = 2560)
+  { id: 'ES-22', name: 'Gestión Educativa', type: 'especifico', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo IX', isElective: false, description: 'Administración escolar, liderazgo directivo y documentos de gestión institucional.' },
+  { id: 'ES-23', name: 'Seminario de Tesis I', type: 'especifico', credits: 3, hoursT: 1, hoursP: 4, cycle: 'Ciclo IX', isElective: false, description: 'Elaboración y sustentación del proyecto de tesis para obtención del título.' },
+  { id: 'EP-21', name: 'Práctica Preprofesional V', type: 'especialidad', credits: 16, hoursT: 0, hoursP: 32, cycle: 'Ciclo IX', isElective: false, description: 'Inmersión total en la institución educativa asumiendo el rol docente a tiempo completo.' },
+
+  // CICLO X (X = 2880)
+  { id: 'ES-24', name: 'Ética Profesional', type: 'especifico', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo X', isElective: false, description: 'Deontología docente, valores profesionales y responsabilidad social.' },
+  { id: 'ES-25', name: 'Seminario de Tesis II', type: 'especifico', credits: 3, hoursT: 4, hoursP: 1, cycle: 'Ciclo X', isElective: false, description: 'Desarrollo, culminación y defensa de la tesis de grado.' },
+  { id: 'EP-22', name: 'Práctica Pre Profesional VI', type: 'especialidad', credits: 16, hoursT: 0, hoursP: 28, cycle: 'Ciclo X', isElective: false, description: 'Culminación de la práctica preprofesional con evaluación integral de desempeño docente.' }
 ];
 
 // RELACIÓN DE LÍNEAS DE PRERREQUISITOS (Muestra de flujos lógicos)
@@ -68,7 +111,17 @@ const PREREQUISITES_EDGES = [
   { id: 'e-2', source: 'ES-3', target: 'ES-5', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
   { id: 'e-3', source: 'ES-8', target: 'EP-1', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
   { id: 'e-4', source: 'EP-2', target: 'EP-4', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
-  { id: 'e-5', source: 'EP-3', target: 'EP-7', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } }
+  { id: 'e-5', source: 'EP-3', target: 'EP-7', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
+  { id: 'e-6', source: 'ES-15', target: 'ES-16', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
+  { id: 'e-7', source: 'ES-16', target: 'ES-18', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
+  { id: 'e-8', source: 'ES-18', target: 'ES-20', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
+  { id: 'e-9', source: 'ES-20', target: 'ES-23', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
+  { id: 'e-10', source: 'ES-23', target: 'ES-25', animated: true, style: { stroke: '#f97316', strokeWidth: 2 } },
+  { id: 'e-11', source: 'EP-5', target: 'EP-11', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
+  { id: 'e-12', source: 'EP-11', target: 'EP-15', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
+  { id: 'e-13', source: 'EP-15', target: 'EP-19', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
+  { id: 'e-14', source: 'EP-19', target: 'EP-21', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } },
+  { id: 'e-15', source: 'EP-21', target: 'EP-22', animated: true, style: { stroke: '#38bdf8', strokeWidth: 2 } }
 ];
 
 // ==========================================
@@ -134,7 +187,12 @@ export default function MallaCurricular() {
       'Ciclo II': 320,
       'Ciclo III': 640,
       'Ciclo IV': 960,
-      'Ciclo V': 1280
+      'Ciclo V': 1280,
+      'Ciclo VI': 1600,
+      'Ciclo VII': 1920,
+      'Ciclo VIII': 2240,
+      'Ciclo IX': 2560,
+      'Ciclo X': 2880
     };
 
     return {
@@ -196,6 +254,9 @@ export default function MallaCurricular() {
         attributionPosition="bottom-right"
         nodesDraggable={false}
         connectable={false}
+        translateExtent={[[-500, -300], [3400, 1200]]}
+        minZoom={0.4}
+        maxZoom={1.5}
       >
         <Background color="#cbd5e1" gap={20} size={1} />
         <Controls className="!bg-white !shadow-lg !border-slate-100 !rounded-lg" />
