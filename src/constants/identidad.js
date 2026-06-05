@@ -1,57 +1,61 @@
-export const mision = "Formar profesionales en Educación Primaria con excelencia académica, humanista, científica y tecnológica, sustentada en la investigación e innovación pedagógica, comprometidos con el desarrollo sociocultural, la inclusión y la diversidad de nuestro país.";
+export const mision = "Somos el primer programa de estudios de la Región que forma licenciados en Educación Primaria, competitivos, con una sólida formación científica, tecnológica, pedagógica y humanística, que busca el mejoramiento de la calidad educativa a través de la innovación y currículo por competencias, y contribuye al desarrollo y transformación sostenible de la localidad, región y el país.";
 
-export const vision = "Ser una Escuela Profesional líder a nivel nacional e internacional en la formación de educadores de Educación Primaria, reconocida por su alta calidad académica, investigación científica, responsabilidad social y contribución al desarrollo sostenible de la educación peruana.";
+export const vision = "Al 2028 seremos un Programa de Estudios de Educación Primaria de la UNT, acreditada que forma líderes de cambio altamente calificados con conocimiento científico, tecnológico y humanístico capaces de satisfacer la demanda de la Educación Básica de la localidad, la región y el país.";
 
 export const valores = [
   {
-    nombre: "Excelencia",
-    descripcion: "Búsqueda constante de la calidad en la enseñanza, aprendizaje e investigación."
+    nombre: "Respeto",
+    descripcion: "Valoración y consideración hacia la diversidad de ideas, culturas y personas dentro de la comunidad educativa."
   },
   {
-    nombre: "Ética",
-    descripcion: "Actuación con integridad, transparencia, honestidad y responsabilidad en el ejercicio docente."
+    nombre: "Cooperación",
+    descripcion: "Trabajo colaborativo y en equipo para alcanzar metas comunes y fortalecer el aprendizaje mutuo."
   },
   {
-    nombre: "Inclusión",
-    descripcion: "Respeto y valoración de la diversidad cultural, social y cognitiva en los espacios de aprendizaje."
+    nombre: "Creatividad",
+    descripcion: "Fomento del pensamiento original y la innovación en la resolución de problemas pedagógicos y el diseño de experiencias de aprendizaje."
   },
   {
-    nombre: "Innovación",
-    descripcion: "Disposición para adaptar, crear y aplicar nuevas estrategias y tecnologías pedagógicas."
+    nombre: "Identidad",
+    descripcion: "Sentido de pertenencia, compromiso y orgullo por nuestra institución, así como por nuestra cultura local, regional y nacional."
   },
   {
-    nombre: "Empatía",
-    descripcion: "Capacidad de comprender y acompañar el proceso de desarrollo de cada estudiante."
+    nombre: "Responsabilidad",
+    descripcion: "Cumplimiento ético y comprometido de los deberes académicos, profesionales y sociales para contribuir al desarrollo educativo."
   },
   {
-    nombre: "Compromiso Social",
-    descripcion: "Vocación de servicio orientada a transformar y mejorar la realidad socioeducativa de la comunidad."
+    nombre: "Equidad",
+    descripcion: "Garantía de igualdad de oportunidades y trato justo, eliminando barreras para el aprendizaje y la participación de todos."
   }
 ];
 
 export const historia = {
-  fundacion: 1965,
-  resena: "La Escuela Profesional de Educación Primaria fue fundada con el propósito de descentralizar y democratizar la formación magisterial en la región. A lo largo de sus más de cinco décadas de existencia, ha formado a miles de maestros que hoy lideran procesos educativos en todo el territorio nacional, adaptándose continuamente a los cambios curriculares y avances tecnológicos.",
+  fundacion: 1936,
+  resena: "La historia de la Escuela Académico Profesional de Educación Primaria tiene dos momentos. El primero inicia el 27 de junio de 1936, fecha en que el Consejo Universitario aprueba el «Plan y bases para la organización de la Sección Pedagógica», que comprendía la Normal Urbana, destinada a formar profesores de educación primaria. Tras un receso, esta fue reabierta en 1957. El segundo momento se gesta a partir de una necesidad social, logrando la reapertura y creación formal de la actual Escuela el 28 de junio de 1993. Los primeros estudiantes de esta etapa iniciaron en 1996, y desde entonces la institución continúa formando profesionales que brindan una educación de calidad a la niñez liberteña y del país.",
   hitos: [
     {
-      año: 1965,
-      descripcion: "Creación oficial de la Escuela Normal Superior, precursora de la actual facultad, con la primera promoción de 45 estudiantes."
+      año: 1936,
+      descripcion: "El Consejo Universitario aprueba la organización de la Sección Pedagógica, marcando el inicio de la formación docente a través de la Normal Urbana."
     },
     {
-      año: 1983,
-      descripcion: "Integración a la estructura universitaria como Escuela Profesional de Educación Primaria, otorgando grados de bachiller y licenciatura."
+      año: 1938,
+      descripcion: "Egresa la primera promoción de educadores formados bajo la modalidad de la Normal Urbana."
     },
     {
-      año: 1998,
-      descripcion: "Implementación del primer rediseño curricular enfocado en el constructivismo y la educación bilingüe intercultural."
+      año: 1957,
+      descripcion: "Se reabre la Normal Urbana después de un receso, asumiendo la dirección el Dr. Héctor Centurión Vallejo."
     },
     {
-      año: 2012,
-      descripcion: "Inauguración del pabellón moderno de la facultad, equipado con laboratorios de tecnología educativa y bibliotecas especializadas."
+      año: 1993,
+      descripcion: "El Consejo Universitario aprueba la reapertura oficial de la Escuela Académico Profesional de Educación Primaria."
     },
     {
-      año: 2021,
-      descripcion: "Acreditación de la calidad educativa por el SINEACE, validando los altos estándares de enseñanza e investigación de la escuela."
+      año: 1996,
+      descripcion: "Ingresa la primera promoción de esta nueva etapa en agosto, marcando el reinicio del dictado de clases de la carrera."
+    },
+    {
+      año: 2017,
+      descripcion: "Consolidación de la Escuela alcanzando las 16 promociones egresadas al servicio de la educación primaria de la región."
     }
   ]
 };

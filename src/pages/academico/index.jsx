@@ -3,7 +3,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import PageHero from '../../components/layout/PageHero';
 import PerfilIngresante from './PerfilIngresante';
 import PerfilEgresado from './PerfilEgresado';
-import PlanEstudios from './PlanEstudios';
+import MallaCurricular from './MallaCurricular';
 import Titulacion from './Titulacion';
 import { GraduationCap } from 'lucide-react';
 
@@ -30,8 +30,8 @@ export default function AcademicoIndex() {
         <section id="perfil-ingresante" className="scroll-mt-24 hidden" />
         <section id="perfil-egresado" className="scroll-mt-24 hidden" />
 
-        <section id="plan-estudios" className="scroll-mt-24">
-          <PlanEstudios />
+        <section id="malla-curricular" className="scroll-mt-24">
+          <MallaCurricular />
         </section>
 
         <section id="titulacion" className="scroll-mt-24">
