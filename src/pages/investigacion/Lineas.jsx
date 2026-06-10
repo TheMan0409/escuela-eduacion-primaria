@@ -26,7 +26,7 @@ export default function Lineas() {
               whileHover={{ y: -6 }}
               className="group h-full"
             >
-              <div className="h-full bg-white rounded-2xl border border-gray-100 hover:border-[#F58220]/40 hover:shadow-[0_8px_32px_rgba(245,130,32,0.1)] transition-all duration-300 overflow-hidden flex flex-col">
+              <div className="h-full bg-white rounded-2xl border border-gray-100 hover:border-[#D4A017]/40 hover:shadow-[0_8px_32px_rgba(245,130,32,0.1)] transition-all duration-300 overflow-hidden flex flex-col">
                 {/* Cabecera coloreada */}
                 <div className="bg-[#002D62] px-6 pt-6 pb-8 relative overflow-hidden">
                   {/* Patrón de fondo */}
@@ -37,7 +37,7 @@ export default function Lineas() {
                   <span className="absolute top-4 right-4 text-5xl font-display font-black text-white/10 leading-none select-none">
                     {String(idx + 1).padStart(2, '0')}
                   </span>
-                  <div className="w-8 h-0.5 bg-[#F58220] rounded-full mb-3 relative" />
+                  <div className="w-8 h-0.5 bg-[#D4A017] rounded-full mb-3 relative" />
                   <h3 className="text-lg font-display font-black text-white leading-snug relative">
                     {linea.nombre}
                   </h3>

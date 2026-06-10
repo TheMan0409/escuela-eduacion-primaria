@@ -15,7 +15,7 @@ export default function PerfilIngresante() {
         <ul className="space-y-4">
           {perfilIngresante.map((comp, idx) => (
             <li key={idx} className="flex gap-3 items-start">
-              <div className="bg-[#F58220]/15 text-[#F58220] rounded-full p-1 flex-shrink-0 mt-0.5">
+              <div className="bg-[#D4A017]/15 text-[#D4A017] rounded-full p-1 flex-shrink-0 mt-0.5">
                 <Check className="w-4 h-4" strokeWidth={3} />
               </div>
               <div>

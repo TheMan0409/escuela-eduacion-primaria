@@ -26,22 +26,22 @@ export default function Titulacion() {
               transition={{ delay: idx * 0.12, duration: 0.4 }}
               className="group"
             >
-              <div className="h-full flex flex-col bg-white rounded-2xl border border-gray-100 hover:border-[#F58220]/30 hover:shadow-[0_8px_32px_rgba(245,130,32,0.1)] transition-all duration-300 overflow-hidden">
+              <div className="h-full flex flex-col bg-white rounded-2xl border border-gray-100 hover:border-[#D4A017]/30 hover:shadow-[0_8px_32px_rgba(245,130,32,0.1)] transition-all duration-300 overflow-hidden">
                 {/* Cabecera azul */}
                 <div className="bg-[#002D62] p-7 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-[0.05]"
                     style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '18px 18px' }}
                   />
                   <div className="relative flex items-start gap-4">
-                    <div className="w-14 h-14 bg-[#F58220]/20 border border-[#F58220]/30 rounded-2xl flex items-center justify-center shrink-0"
+                    <div className="w-14 h-14 bg-[#D4A017]/20 border border-[#D4A017]/30 rounded-2xl flex items-center justify-center shrink-0"
                       style={{ boxShadow: '0 0 20px rgba(245,130,32,0.15)' }}>
                       {idx === 0
-                        ? <GraduationCap className="w-7 h-7 text-[#F58220]" />
-                        : <Award className="w-7 h-7 text-[#F58220]" />
+                        ? <GraduationCap className="w-7 h-7 text-[#D4A017]" />
+                        : <Award className="w-7 h-7 text-[#D4A017]" />
                       }
                     </div>
                     <div>
-                      <div className="w-6 h-0.5 bg-[#F58220] rounded-full mb-2" />
+                      <div className="w-6 h-0.5 bg-[#D4A017] rounded-full mb-2" />
                       <h3 className="text-xl font-display font-black text-white leading-tight">
                         {tramite.titulo}
                       </h3>
@@ -63,8 +63,8 @@ export default function Titulacion() {
                     <ul className="space-y-3">
                       {tramite.requisitos.map((req, ridx) => (
                         <li key={ridx} className="flex items-start gap-3 text-sm text-gray-600">
-                          <span className="w-5 h-5 rounded-full bg-[#F58220]/15 flex items-center justify-center shrink-0 mt-0.5">
-                            <Check className="w-3 h-3 text-[#F58220]" />
+                          <span className="w-5 h-5 rounded-full bg-[#D4A017]/15 flex items-center justify-center shrink-0 mt-0.5">
+                            <Check className="w-3 h-3 text-[#D4A017]" />
                           </span>
                           <span className="leading-relaxed">{req}</span>
                         </li>
@@ -77,7 +77,7 @@ export default function Titulacion() {
                     href={tramite.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#F58220] hover:bg-[#e07010] text-white font-black rounded-xl transition-colors text-sm group-hover:shadow-[0_4px_20px_rgba(245,130,32,0.4)]"
+                    className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#D4A017] hover:bg-[#e07010] text-white font-black rounded-xl transition-colors text-sm group-hover:shadow-[0_4px_20px_rgba(245,130,32,0.4)]"
                   >
                     <Download className="w-4 h-4" />
                     Descargar Requisitos

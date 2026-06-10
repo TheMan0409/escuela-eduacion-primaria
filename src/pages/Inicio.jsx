@@ -60,7 +60,7 @@ export default function Inicio() {
         </svg>
 
         {/* Acento naranja diagonal en la derecha */}
-        <div className="absolute right-0 top-0 bottom-0 w-2 bg-gradient-to-b from-[#F58220] via-[#F58220]/60 to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-2 bg-gradient-to-b from-[#D4A017] via-[#D4A017]/60 to-transparent z-10" />
 
         <div className="container relative z-10 mx-auto px-4 md:px-8 pt-24 pb-24 lg:pt-32 lg:pb-36">
           <motion.div
@@ -76,10 +76,10 @@ export default function Inicio() {
             <motion.h1
               variants={itemVariants}
               className="font-display font-black leading-none mb-3 text-white"
-              style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', textShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
+          style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', textShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
             >
               Educación<br />
-              <span style={{ color: '#F58220' }}>Primaria</span>
+          <span style={{ color: '#D4A017' }}>Primaria</span>
             </motion.h1>
 
             <motion.p
@@ -94,9 +94,9 @@ export default function Inicio() {
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 justify-end">
               <Link to="/academico#plan-estudios">
                 <motion.button
-                  whileHover={{ scale: 1.04, boxShadow: '0 0 32px rgba(245,130,32,0.5)' }}
+              whileHover={{ scale: 1.04, boxShadow: '0 0 32px rgba(212,160,23,0.5)' }}
                   whileTap={{ scale: 0.97 }}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#F58220] hover:bg-[#e07010] text-white font-black px-8 py-3.5 rounded-xl text-base transition-colors"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#D4A017] hover:bg-[#B88A14] text-white font-black px-8 py-3.5 rounded-xl text-base transition-colors"
                 >
                   <GraduationCap className="w-5 h-5" />
                   Ver Plan de Estudios
@@ -133,8 +133,8 @@ export default function Inicio() {
                 className={`py-8 px-6 text-center border-white/10 ${idx < 3 ? 'lg:border-r' : ''} ${idx < 2 ? 'border-r' : ''} border-b lg:border-b-0`}
               >
                 <div
-                  className="text-4xl md:text-5xl font-display font-black mb-1"
-                  style={{ color: '#F58220', textShadow: '0 0 20px rgba(245,130,32,0.3)' }}
+              className="text-4xl md:text-5xl font-display font-black mb-1"
+              style={{ color: '#D4A017', textShadow: '0 0 20px rgba(212,160,23,0.3)' }}
                 >
                   {cifra.numero}
                 </div>
@@ -163,9 +163,9 @@ export default function Inicio() {
               className="flex flex-col"
             >
               <h2 className="text-3xl md:text-4xl font-display font-bold text-pucp-blue-dark uppercase mb-2">
-                Bienvenida de la <span className="text-[#F58220]">Rectora</span>
+            Bienvenida de la <span className="text-[#D4A017]">Rectora</span>
               </h2>
-              <div className="w-16 h-1 bg-[#F58220] mb-6"></div>
+          <div className="w-16 h-1 bg-[#D4A017] mb-6"></div>
               
               <div className="text-gray-700 font-body space-y-4 text-justify leading-relaxed">
                 <p>
@@ -206,7 +206,7 @@ export default function Inicio() {
             <SectionTitle title="Noticias y Actualidad" subtitle="Últimas novedades, eventos y comunicados de la Escuela." />
             <Link
               to="/investigacion"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#002D62] hover:text-[#F58220] transition-colors whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#002D62] hover:text-[#D4A017] transition-colors whitespace-nowrap shrink-0"
             >
               Ver todas <ArrowRight className="w-4 h-4" />
             </Link>
@@ -225,7 +225,7 @@ export default function Inicio() {
                 <Link to={noticia.link} className="block h-full group">
                   <Card className="h-full flex flex-col p-0 overflow-hidden hover:shadow-lg transition-shadow">
                     {/* Franja superior de color por categoría */}
-                    <div className="h-1.5 bg-[#002D62] w-full" />
+                    <div className="h-1.5 bg-[#D4A017] w-full" />
                     <div className="p-6 flex flex-col flex-1">
                       <div className="flex items-center gap-2 mb-3">
                         <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${noticia.categoriaColor}`}>
@@ -236,13 +236,13 @@ export default function Inicio() {
                           {noticia.fechaFormateada}
                         </span>
                       </div>
-                      <h3 className="font-display font-bold text-[#002D62] text-base leading-snug mb-3 group-hover:text-[#F58220] transition-colors flex-1">
+                  <h3 className="font-display font-bold text-[#002D62] text-base leading-snug mb-3 group-hover:text-[#D4A017] transition-colors flex-1">
                         {noticia.titulo}
                       </h3>
                       <p className="text-gray-500 text-sm leading-relaxed mb-4">
                         {noticia.resumen}
                       </p>
-                      <span className="mt-auto inline-flex items-center gap-1 text-[#F58220] text-sm font-bold group-hover:gap-2 transition-all">
+                  <span className="mt-auto inline-flex items-center gap-1 text-[#D4A017] text-sm font-bold group-hover:gap-2 transition-all">
                         Leer más <ArrowRight className="w-3.5 h-3.5" />
                       </span>
                     </div>
@@ -279,11 +279,11 @@ export default function Inicio() {
                     {/* Cuello */}
                     <rect x="88" y="103" width="24" height="22" rx="8" fill="rgba(255,255,255,0.2)" />
                     {/* Blazer/toga decorativa */}
-                    <path d="M50 175 L100 155 L150 175 L155 260 L45 260Z" fill="rgba(245,130,32,0.25)" />
+                <path d="M50 175 L100 155 L150 175 L155 260 L45 260Z" fill="rgba(212,160,23,0.25)" />
                   </svg>
                 </div>
                 {/* Plaquita con nombre */}
-                <div className="absolute bottom-0 left-0 right-0 bg-[#F58220] text-white text-center py-2 px-3">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#D4A017] text-white text-center py-2 px-3">
                   <p className="font-display font-bold text-sm leading-tight">{director.nombre}</p>
                   <p className="text-xs text-white/80 font-medium">{director.cargo}</p>
                 </div>
@@ -291,15 +291,15 @@ export default function Inicio() {
 
               {/* Texto */}
               <div className="md:col-span-2 p-8 md:p-10 flex flex-col justify-center text-white">
-                <div className="w-10 h-1 bg-[#F58220] mb-5 rounded-full" />
+            <div className="w-10 h-1 bg-[#D4A017] mb-5 rounded-full" />
                 <h2 className="font-display font-bold text-2xl md:text-3xl mb-5 leading-tight">
-                  Mensaje de la <span className="text-[#F58220]">Dirección</span>
+              Mensaje de la <span className="text-[#D4A017]">Dirección</span>
                 </h2>
-                <blockquote className="text-white/80 font-body text-base leading-relaxed mb-6 italic border-l-2 border-[#F58220]/50 pl-4">
+            <blockquote className="text-white/80 font-body text-base leading-relaxed mb-6 italic border-l-2 border-[#D4A017]/50 pl-4">
                   "{director.bio}"
                 </blockquote>
                 <Link to="/autoridades#direccion">
-                  <button className="inline-flex items-center gap-2 bg-[#F58220] hover:bg-[#e07010] text-white font-bold px-6 py-2.5 rounded-lg transition-colors text-sm">
+              <button className="inline-flex items-center gap-2 bg-[#D4A017] hover:bg-[#B88A14] text-white font-bold px-6 py-2.5 rounded-lg transition-colors text-sm">
                     Conocer más <ArrowRight className="w-4 h-4" />
                   </button>
                 </Link>
@@ -334,7 +334,7 @@ export default function Inicio() {
                   whileHover={{ y: -6, scale: 1.02 }}
                 >
                   <Link to={acceso.link} className="block h-full group">
-                    <div className="h-full rounded-2xl overflow-hidden bg-white border border-gray-100 hover:border-[#F58220]/40 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(245,130,32,0.15)] flex flex-col">
+                <div className="h-full rounded-2xl overflow-hidden bg-white border border-gray-100 hover:border-[#D4A017]/40 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(212,160,23,0.15)] flex flex-col">
                       
                       {/* Imagen de Portada */}
                       <div className="h-32 w-full relative overflow-hidden shrink-0">
@@ -348,7 +348,7 @@ export default function Inicio() {
 
                       {/* Contenido */}
                       <div className="p-6 flex flex-col flex-1 relative bg-white">
-                        <h3 className="text-lg font-display font-black text-[#002D62] mb-2 leading-tight group-hover:text-[#F58220] transition-colors">
+                    <h3 className="text-lg font-display font-black text-[#002D62] mb-2 leading-tight group-hover:text-[#D4A017] transition-colors">
                           {acceso.titulo}
                         </h3>
                         <p className="text-gray-500 text-sm leading-relaxed flex-1">
@@ -356,7 +356,7 @@ export default function Inicio() {
                         </p>
 
                         {/* CTA flecha */}
-                        <div className="mt-4 flex items-center gap-1 text-[#F58220] text-xs font-bold group-hover:gap-2 transition-all">
+                    <div className="mt-4 flex items-center gap-1 text-[#D4A017] text-xs font-bold group-hover:gap-2 transition-all">
                           Ver más <ArrowRight className="w-3.5 h-3.5" />
                         </div>
                       </div>
@@ -400,13 +400,13 @@ export default function Inicio() {
                 <div className="absolute inset-0 bg-[#002D62]/20 mix-blend-multiply" />
               </div>
               <div className="relative z-10 p-8 md:p-10 w-full transform group-hover:-translate-y-2 transition-transform duration-500">
-                <span className="inline-block px-3.5 py-1.5 bg-[#F58220] text-white text-[10px] font-black tracking-widest uppercase rounded-md mb-4 shadow-lg">
+            <span className="inline-block px-3.5 py-1.5 bg-[#D4A017] text-white text-[10px] font-black tracking-widest uppercase rounded-md mb-4 shadow-lg">
                   Aula Principal
                 </span>
                 <h3 className="text-2xl md:text-4xl font-display font-black text-white mb-3 leading-tight">
                   Módulo de Estimulación Temprana
                 </h3>
-                <div className="w-12 h-1 bg-[#F58220] mb-4 transition-all duration-500 group-hover:w-24"></div>
+            <div className="w-12 h-1 bg-[#D4A017] mb-4 transition-all duration-500 group-hover:w-24"></div>
                 <p className="text-white/80 text-sm md:text-base leading-relaxed max-w-lg">
                   Un espacio especializado y equipado con materiales didácticos de vanguardia para potenciar el desarrollo cognitivo y psicomotriz en la primera infancia.
                 </p>
@@ -431,13 +431,13 @@ export default function Inicio() {
                 <div className="absolute inset-0 bg-[#002D62]/20 mix-blend-multiply" />
               </div>
               <div className="relative z-10 p-8 md:p-10 w-full transform group-hover:-translate-y-2 transition-transform duration-500">
-                <span className="inline-block px-3.5 py-1.5 bg-[#F58220] text-white text-[10px] font-black tracking-widest uppercase rounded-md mb-4 shadow-lg">
+            <span className="inline-block px-3.5 py-1.5 bg-[#D4A017] text-white text-[10px] font-black tracking-widest uppercase rounded-md mb-4 shadow-lg">
                   Laboratorio
                 </span>
                 <h3 className="text-2xl md:text-4xl font-display font-black text-white mb-3 leading-tight">
                   Centro de<br/>Cómputo
                 </h3>
-                <div className="w-12 h-1 bg-[#F58220] mb-4 transition-all duration-500 group-hover:w-24"></div>
+            <div className="w-12 h-1 bg-[#D4A017] mb-4 transition-all duration-500 group-hover:w-24"></div>
                 <p className="text-white/80 text-sm md:text-base leading-relaxed max-w-lg">
                   Laboratorio tecnológico moderno con equipos de última generación, donde nuestros estudiantes desarrollan competencias digitales esenciales.
                 </p>

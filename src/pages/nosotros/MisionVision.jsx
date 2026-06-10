@@ -22,12 +22,12 @@ export default function MisionVision() {
             <MisionCard
               title="Nuestra Misión"
               description={mision}
-              icon={<Target className="w-8 h-8 text-[#F58220]" />}
+              icon={<Target className="w-8 h-8 text-yellow-500" />}
             />
             <MisionCard
               title="Nuestra Visión"
               description={vision}
-              icon={<Telescope className="w-8 h-8 text-[#F58220]" />}
+              icon={<Telescope className="w-8 h-8 text-yellow-500" />}
             />
           </div>
         </div>
