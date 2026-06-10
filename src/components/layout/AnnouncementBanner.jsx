@@ -43,7 +43,7 @@ export default function AnnouncementBanner() {
         animate={{ height: 'auto', opacity: 1 }}
         exit={{ height: 0, opacity: 0 }}
         transition={{ duration: 0.3 }}
-        className="bg-[#F58220] text-white overflow-hidden"
+        className="bg-[#D4A017] text-white overflow-hidden"
       >
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between gap-3 py-2.5">

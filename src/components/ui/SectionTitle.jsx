@@ -17,7 +17,7 @@ export function SectionTitle({ title, subtitle, center = false, badge, className
     const parts = text.split(/\*\*(.*?)\*\*/g);
     return parts.map((part, i) =>
       i % 2 === 1
-        ? <span key={i} className="text-[#F58220]">{part}</span>
+        ? <span key={i} className="text-[#D4A017]">{part}</span>
         : part
     );
   };
@@ -32,7 +32,7 @@ export function SectionTitle({ title, subtitle, center = false, badge, className
     >
       {/* Badge opcional */}
       {badge && (
-        <span className="inline-block mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#F58220] bg-[#F58220]/10 px-3 py-1 rounded-full border border-[#F58220]/20">
+        <span className="inline-block mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#D4A017] bg-[#D4A017]/10 px-3 py-1 rounded-full border border-[#D4A017]/20">
           {badge}
         </span>
       )}
@@ -48,7 +48,7 @@ export function SectionTitle({ title, subtitle, center = false, badge, className
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45, ease: 'easeOut' }}
-          className="h-1 w-14 bg-[#F58220] rounded-full origin-left"
+          className="h-1 w-14 bg-[#D4A017] rounded-full origin-left"
         />
         <motion.div
           initial={{ scaleX: 0 }}

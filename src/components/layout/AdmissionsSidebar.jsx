@@ -87,7 +87,7 @@ export default function AdmissionsSidebar() {
           y: isMobile ? '0%' : '-50%',
           borderTopRightRadius: isMobile ? '0px' : '24px',
           borderBottomRightRadius: isMobile ? '0px' : '24px',
-          backgroundColor: (isHovered || isMobileOpen) ? '#F58220' : '#002D62',
+          backgroundColor: (isHovered || isMobileOpen) ? '#D4A017' : '#002D62',
         }}
         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         onMouseEnter={() => !isMobile && setIsHovered(true)}
@@ -183,7 +183,7 @@ export default function AdmissionsSidebar() {
                 </li>
               </ul>
 
-              <a href="https://admisionunt.edu.pe/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-3 bg-white text-[#F58220] font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-md">
+          <a href="https://admisionunt.edu.pe/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-3 bg-white text-[#D4A017] font-bold rounded-xl hover:bg-gray-100 transition-colors shadow-md">
                 Portal de Admisión UNT <ExternalLink className="w-4 h-4" />
               </a>
             </div>

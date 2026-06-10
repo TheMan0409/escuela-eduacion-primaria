@@ -9,7 +9,7 @@ export default function HitoTimeline({ hitos }) {
   return (
     <div className="relative pl-8 md:pl-12">
       {/* Línea vertical */}
-      <div className="absolute left-3 md:left-5 top-2 bottom-2 w-0.5 bg-gradient-to-b from-[#F58220] via-[#002D62]/40 to-transparent" />
+      <div className="absolute left-3 md:left-5 top-2 bottom-2 w-0.5 bg-gradient-to-b from-[#D4A017] via-[#002D62]/40 to-transparent" />
 
       <div className="space-y-8">
         {hitos?.map((hito, index) => (
@@ -22,13 +22,13 @@ export default function HitoTimeline({ hitos }) {
             className="relative flex gap-6 group"
           >
             {/* Punto en la línea */}
-            <div className="absolute -left-[26px] md:-left-[34px] top-1 w-4 h-4 rounded-full border-2 border-[#F58220] bg-white group-hover:bg-[#F58220] transition-colors duration-300 z-10 shrink-0" />
+            <div className="absolute -left-[26px] md:-left-[34px] top-1 w-4 h-4 rounded-full border-2 border-[#D4A017] bg-white group-hover:bg-[#D4A017] transition-colors duration-300 z-10 shrink-0" />
 
             {/* Contenido */}
-            <div className="flex-1 bg-white rounded-2xl border border-gray-100 hover:border-[#F58220]/30 hover:shadow-md transition-all duration-300 p-5 flex gap-4 items-start">
+            <div className="flex-1 bg-white rounded-2xl border border-gray-100 hover:border-[#D4A017]/30 hover:shadow-md transition-all duration-300 p-5 flex gap-4 items-start">
               {/* Año destacado */}
               <div className="shrink-0 text-right">
-                <span className="text-2xl font-display font-black text-[#F58220] leading-none">
+                <span className="text-2xl font-display font-black text-[#D4A017] leading-none">
                   {hito.año}
                 </span>
               </div>

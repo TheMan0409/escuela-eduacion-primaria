@@ -18,7 +18,7 @@ export default function ProyectoCard({ proyecto }) {
       transition={{ duration: 0.3 }}
       className="group h-full"
     >
-      <div className="h-full flex flex-col bg-white rounded-2xl border border-gray-100 hover:border-[#F58220]/30 hover:shadow-lg transition-all duration-300 overflow-hidden">
+      <div className="h-full flex flex-col bg-white rounded-2xl border border-gray-100 hover:border-[#D4A017]/30 hover:shadow-lg transition-all duration-300 overflow-hidden">
         {/* Franja superior de estado */}
         <div className={`h-1.5 w-full ${isActive ? 'bg-emerald-400' : 'bg-gray-300'}`} />
 
@@ -40,7 +40,7 @@ export default function ProyectoCard({ proyecto }) {
           </div>
 
           {/* Título */}
-          <h3 className="font-display font-bold text-[#002D62] text-base leading-snug mb-3 group-hover:text-[#F58220] transition-colors">
+          <h3 className="font-display font-bold text-[#002D62] text-base leading-snug mb-3 group-hover:text-[#D4A017] transition-colors">
             {proyecto.titulo}
           </h3>
 
@@ -52,13 +52,13 @@ export default function ProyectoCard({ proyecto }) {
           {/* Investigadores */}
           <div className="bg-gray-50 rounded-xl p-4 mt-auto">
             <div className="flex items-center gap-1.5 mb-2">
-              <Users className="w-3 h-3 text-[#F58220]" />
+              <Users className="w-3 h-3 text-[#D4A017]" />
               <span className="text-[10px] font-black uppercase tracking-[0.15em] text-gray-400">Investigadores</span>
             </div>
             <ul className="space-y-1">
               {proyecto.investigadores.map((inv, idx) => (
                 <li key={idx} className="text-xs text-gray-600 font-medium flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#F58220] shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-[#D4A017] shrink-0" />
                   {inv}
                 </li>
               ))}

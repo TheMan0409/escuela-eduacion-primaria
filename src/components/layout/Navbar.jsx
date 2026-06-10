@@ -120,15 +120,15 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1 bg-[#002D62] rounded-2xl px-2 py-1.5 shadow-md">
+          <nav className="hidden lg:flex items-center gap-1 bg-[#002D62] rounded-none px-2 py-1.5 shadow-md">
             {NAV_LINKS.map((link) => (
               <div key={link.name} className="relative group flex">
                 <NavLink
                   to={link.path}
                   end={link.path === '/'}
                   className={({ isActive }) => clsx(
-                  'font-body font-medium text-[15px] transition-colors flex items-center px-4 py-2 md:py-2.5 rounded-xl',
-                  isActive ? 'bg-[#F58220] text-white' : 'text-white hover:bg-white/10'
+                  'font-body font-medium text-[15px] transition-colors flex items-center px-4 py-2 md:py-2.5 rounded-none',
+                  isActive ? 'bg-[#D4A017] text-white' : 'text-white hover:bg-white/10'
                   )}
                 >
                   {link.name}
@@ -139,7 +139,7 @@ export default function Navbar() {
                 
                 {/* Dropdown */}
                 {link.sublinks && (
-                  <div className="absolute top-full left-0 mt-3 w-64 bg-white shadow-xl rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="absolute top-full left-0 mt-3 w-64 bg-white shadow-xl rounded-none overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="flex flex-col">
                       {link.sublinks.map((sublink) => (
                         <Link

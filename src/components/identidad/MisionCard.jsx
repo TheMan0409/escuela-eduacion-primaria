@@ -28,16 +28,16 @@ export default function MisionCard({ title, description, icon }) {
         </svg>
 
         {/* Acento lateral */}
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#F58220] via-[#F58220]/60 to-transparent rounded-l-2xl" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#D4A017] via-[#D4A017]/60 to-transparent rounded-l-2xl" />
 
         {/* Ícono */}
         {icon && (
           <div
             className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 relative"
             style={{
-              background: 'rgba(245,130,32,0.15)',
-              border: '1px solid rgba(245,130,32,0.3)',
-              boxShadow: '0 0 20px rgba(245,130,32,0.12)',
+              background: 'rgba(212,160,23,0.15)',
+              border: '1px solid rgba(212,160,23,0.3)',
+              boxShadow: '0 0 20px rgba(212,160,23,0.12)',
             }}
           >
             {icon}
@@ -45,7 +45,7 @@ export default function MisionCard({ title, description, icon }) {
         )}
 
         {/* Línea naranja */}
-        <div className="w-8 h-0.5 bg-[#F58220] rounded-full mb-4" />
+        <div className="w-8 h-0.5 bg-[#D4A017] rounded-full mb-4" />
 
         {/* Título */}
         <h3 className="text-xl md:text-2xl font-display font-black text-white mb-4 leading-tight">
@@ -58,7 +58,7 @@ export default function MisionCard({ title, description, icon }) {
         </p>
 
         {/* Círculo decorativo */}
-        <div className="absolute -bottom-6 -right-6 w-28 h-28 rounded-full bg-[#F58220]/8 pointer-events-none" />
+        <div className="absolute -bottom-6 -right-6 w-28 h-28 rounded-full bg-[#D4A017]/8 pointer-events-none" />
       </div>
     </motion.div>
   );

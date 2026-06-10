@@ -20,7 +20,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
 
         {/* Bloque naranja diagonal */}
         <div
-          className="absolute -right-20 top-0 bottom-0 w-1/3 bg-[#F58220]/10"
+          className="absolute -right-20 top-0 bottom-0 w-1/3 bg-[#D4A017]/10"
           style={{ clipPath: 'polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
         />
 
@@ -28,13 +28,13 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
         <motion.div
           animate={{ scale: [1, 1.08, 1], opacity: [0.08, 0.14, 0.08] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -top-16 -right-16 w-80 h-80 rounded-full border-2 border-[#F58220]/30"
+          className="absolute -top-16 -right-16 w-80 h-80 rounded-full border-2 border-[#D4A017]/30"
         />
-        <div className="absolute top-4 right-10 w-16 h-16 rounded-full bg-[#F58220]/15" />
+        <div className="absolute top-4 right-10 w-16 h-16 rounded-full bg-[#D4A017]/15" />
         <div className="absolute bottom-2 left-1/3 w-8 h-8 rounded-full bg-white/10" />
 
         {/* Barra izquierda naranja gruesa */}
-        <div className="absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b from-[#F58220] via-[#F58220]/70 to-transparent" />
+        <div className="absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b from-[#D4A017] via-[#D4A017]/70 to-transparent" />
       </div>
 
       <div className="relative container mx-auto px-4 md:px-8 py-10 md:py-16">
@@ -47,7 +47,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
             className="flex items-center gap-1.5 text-white/50 text-xs font-medium mb-5 flex-wrap"
             aria-label="Breadcrumb"
           >
-            <Link to="/" className="flex items-center gap-1 hover:text-[#F58220] transition-colors">
+          <Link to="/" className="flex items-center gap-1 hover:text-[#D4A017] transition-colors">
               <Home className="w-3 h-3" />
               <span>Inicio</span>
             </Link>
@@ -55,7 +55,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
               <React.Fragment key={idx}>
                 <ChevronRight className="w-3 h-3 text-white/25" />
                 {crumb.to && idx < breadcrumbs.length - 1 ? (
-                  <Link to={crumb.to} className="hover:text-[#F58220] transition-colors">{crumb.label}</Link>
+                <Link to={crumb.to} className="hover:text-[#D4A017] transition-colors">{crumb.label}</Link>
                 ) : (
                   <span className="text-white/80 font-semibold">{crumb.label}</span>
                 )}
@@ -73,12 +73,12 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
               transition={{ duration: 0.5, type: 'spring' }}
               className="hidden md:flex shrink-0 w-20 h-20 rounded-2xl items-center justify-center relative"
               style={{
-                background: 'linear-gradient(135deg, rgba(245,130,32,0.25) 0%, rgba(245,130,32,0.08) 100%)',
-                border: '1px solid rgba(245,130,32,0.35)',
-                boxShadow: '0 0 30px rgba(245,130,32,0.15)',
+              background: 'linear-gradient(135deg, rgba(212,160,23,0.25) 0%, rgba(212,160,23,0.08) 100%)',
+              border: '1px solid rgba(212,160,23,0.35)',
+              boxShadow: '0 0 30px rgba(212,160,23,0.15)',
               }}
             >
-              <Icon className="w-10 h-10 text-[#F58220]" />
+            <Icon className="w-10 h-10 text-[#D4A017]" />
             </motion.div>
           )}
 
@@ -88,7 +88,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], icon: Icon
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="w-16 h-[3px] bg-[#F58220] rounded-full mb-4 origin-left"
+            className="w-16 h-[3px] bg-[#D4A017] rounded-full mb-4 origin-left"
             />
 
             <motion.h1

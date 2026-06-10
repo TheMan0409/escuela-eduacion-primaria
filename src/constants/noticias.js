@@ -4,9 +4,9 @@ export const noticias = [
     id: 1,
     categoria: 'Evento Académico',
     categoriaColor: 'bg-blue-100 text-blue-700',
-    titulo: 'I Congreso Regional de Innovación Educativa en Educación Primaria',
+    titulo: 'II Congreso Regional de Innovación Educativa en Educación Primaria',
     resumen:
-      'Los días 15 y 16 de julio se realizará el primer congreso de innovación pedagógica organizado por nuestra escuela, con ponentes nacionales e internacionales.',
+      'Los días 15 y 16 de julio se realizará el segundo congreso de innovación pedagógica organizado por nuestra escuela, con ponentes nacionales e internacionales.',
     fecha: '2025-06-15',
     fechaFormateada: '15 Jun 2025',
     link: '/investigacion#proyectos',
@@ -14,7 +14,7 @@ export const noticias = [
   {
     id: 2,
     categoria: 'Convocatoria',
-    categoriaColor: 'bg-orange-100 text-orange-700',
+    categoriaColor: 'bg-yellow-100 text-yellow-700',
     titulo: 'Convocatoria: Prácticas Preprofesionales en Colegios Aliados 2025-II',
     resumen:
       'Se abre la convocatoria para la asignación de plazas de práctica preprofesional en los colegios nacionales aliados de la red educativa de Trujillo.',

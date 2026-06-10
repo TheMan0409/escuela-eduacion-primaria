@@ -11,15 +11,15 @@ export default function ValorItem({ valor, index }) {
       whileHover={{ y: -4 }}
       className="group"
     >
-      <div className="h-full bg-white rounded-2xl border border-gray-100 hover:border-[#F58220]/40 hover:shadow-lg transition-all duration-300 p-6 flex gap-4 items-start">
+      <div className="h-full bg-white rounded-2xl border border-gray-100 hover:border-[#D4A017]/40 hover:shadow-lg transition-all duration-300 p-6 flex gap-4 items-start">
         {/* Índice numérico */}
-        <div className="shrink-0 w-10 h-10 rounded-xl bg-[#002D62] flex items-center justify-center group-hover:bg-[#F58220] transition-colors duration-300">
+        <div className="shrink-0 w-10 h-10 rounded-xl bg-[#002D62] flex items-center justify-center group-hover:bg-[#D4A017] transition-colors duration-300">
           <span className="text-white font-display font-black text-sm">
             {String(index + 1).padStart(2, '0')}
           </span>
         </div>
         <div>
-          <h4 className="font-display font-bold text-[#002D62] text-base mb-1 group-hover:text-[#F58220] transition-colors">
+          <h4 className="font-display font-bold text-[#002D62] text-base mb-1 group-hover:text-[#D4A017] transition-colors">
             {valor.nombre}
           </h4>
           <p className="text-gray-500 text-sm leading-relaxed">

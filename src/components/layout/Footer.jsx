@@ -78,7 +78,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={socialLabels[red] || red}
-                    className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#F58220] flex items-center justify-center transition-colors duration-200"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#D4A017] flex items-center justify-center transition-colors duration-200"
                     aria-label={`Visitar ${socialLabels[red] || red}`}
                   >
                     {socialIcons[red] || <span className="text-xs font-bold uppercase">{red.charAt(0)}</span>}
@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* Columna 2: Enlaces Rápidos */}
             <div>
-              <h3 className="font-display font-bold text-base mb-5 text-[#F58220] uppercase tracking-wider">
+          <h3 className="font-display font-bold text-base mb-5 text-[#D4A017] uppercase tracking-wider">
                 Información
               </h3>
               <ul className="space-y-2.5">
@@ -106,7 +106,7 @@ export default function Footer() {
                       to={to}
                       className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-150 text-sm flex items-center gap-1.5"
                     >
-                      <span className="text-[#F58220] text-xs">›</span>
+                  <span className="text-[#D4A017] text-xs">›</span>
                       {label}
                     </Link>
                   </li>
@@ -116,20 +116,20 @@ export default function Footer() {
 
             {/* Columna 3: Contacto */}
             <div>
-              <h3 className="font-display font-bold text-base mb-5 text-[#F58220] uppercase tracking-wider">
+          <h3 className="font-display font-bold text-base mb-5 text-[#D4A017] uppercase tracking-wider">
                 Contacto
               </h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-gray-300 text-sm items-start">
-                  <MapPin className="w-4 h-4 text-[#F58220] shrink-0 mt-0.5" />
+              <MapPin className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" />
                   <span>{informacionContacto.direccion}</span>
                 </li>
                 <li className="flex gap-3 text-gray-300 text-sm items-center">
-                  <Phone className="w-4 h-4 text-[#F58220] shrink-0" />
+              <Phone className="w-4 h-4 text-[#D4A017] shrink-0" />
                   <span>{informacionContacto.telefonos.join(' / ')}</span>
                 </li>
                 <li className="flex gap-3 text-sm items-center">
-                  <Mail className="w-4 h-4 text-[#F58220] shrink-0" />
+              <Mail className="w-4 h-4 text-[#D4A017] shrink-0" />
                   <a href={`mailto:${informacionContacto.correo}`} className="text-gray-300 hover:text-white transition-colors">
                     {informacionContacto.correo}
                   </a>
@@ -139,11 +139,11 @@ export default function Footer() {
 
             {/* Columna 4: Horarios + Links institucionales */}
             <div>
-              <h3 className="font-display font-bold text-base mb-5 text-[#F58220] uppercase tracking-wider">
+          <h3 className="font-display font-bold text-base mb-5 text-[#D4A017] uppercase tracking-wider">
                 Horarios de Atención
               </h3>
               <div className="flex gap-3 text-gray-300 text-sm items-start mb-6">
-                <Clock className="w-4 h-4 text-[#F58220] shrink-0 mt-0.5" />
+            <Clock className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <p className="text-white font-semibold">Lunes a Viernes</p>
                   <p>08:00 – 13:00 hrs</p>
