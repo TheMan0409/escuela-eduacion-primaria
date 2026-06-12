@@ -22,7 +22,7 @@ export function Modal({ isOpen, onClose, title, children }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-dark/60 z-[100] backdrop-blur-sm"
+            className="fixed inset-0 bg-dark/60 z-[100] backdrop-blur-[2px]"
           />
           
           {/* Modal Content */}

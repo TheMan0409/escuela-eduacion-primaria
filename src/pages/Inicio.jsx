@@ -9,6 +9,7 @@ import { Button } from '../components/ui/Button';
 import frontImage from '../assets/frontunt.jpg';
 import { noticias } from '../constants/noticias';
 import { director } from '../constants/autoridades';
+import AdmissionsSidebar from '../components/layout/AdmissionsSidebar';
 
 export default function Inicio() {
   const containerVariants = {
@@ -37,6 +38,7 @@ export default function Inicio() {
 
   return (
     <PageWrapper>
+      <AdmissionsSidebar />
       {/* ══════════════════════════════════════════
           HERO — Motivador y enérgico para estudiantes
           ══════════════════════════════════════════ */}
@@ -44,9 +46,9 @@ export default function Inicio() {
         className="relative overflow-hidden text-white min-h-[680px] flex items-center bg-cover bg-center"
         style={{ backgroundImage: `url(${frontImage})` }}
       >
-        {/* Overlay doble: izquierda transparente, derecha azul sólido */}
+        {/* Overlay reducido al 10% de opacidad máxima para que la imagen se vea clara */}
         <div className="absolute inset-0 z-0"
-          style={{ background: 'linear-gradient(110deg, rgba(0,0,0,0.1) 0%, rgba(0,29,70,0.82) 42%, rgba(0,20,55,0.97) 70%, #001232 100%)' }}
+          style={{ background: 'linear-gradient(110deg, rgba(0,0,0,0.05) 0%, rgba(0,29,70,0.1) 42%, rgba(0,20,55,0.1) 70%, rgba(0,18,50,0.1) 100%)' }}
         />
 
         {/* Patrón de puntos sutil */}
@@ -106,7 +108,7 @@ export default function Inicio() {
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-3.5 rounded-xl text-base backdrop-blur-sm transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-3.5 rounded-xl text-base backdrop-blur-[2px] transition-all"
                 >
                   Conocer más
                   <ArrowRight className="w-4 h-4" />

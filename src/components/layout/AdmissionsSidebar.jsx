@@ -70,7 +70,7 @@ export default function AdmissionsSidebar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsMobileOpen(false)}
-            className="fixed inset-0 bg-black/60 z-[60] backdrop-blur-sm"
+            className="fixed inset-0 bg-black/60 z-[60] backdrop-blur-[2px]"
           />
         )}
       </AnimatePresence>

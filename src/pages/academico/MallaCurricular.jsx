@@ -236,6 +236,20 @@ export default function MallaCurricular() {
         </div>
       </div>
 
+      {/* Botón de descarga de la Malla en PDF */}
+      <div className="absolute top-4 right-4 z-10">
+        <a
+          href={`${import.meta.env.BASE_URL}PLAN DE ESTUIDOS 2025.pdf`}
+          download="Plan_de_Estudios_2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-4 py-2.5 rounded-xl shadow-lg transition-colors duration-200 text-[11px] font-bold tracking-wide"
+        >
+          <Download size={14} className="text-sky-300" />
+          DESCARGAR EN PDF
+        </a>
+      </div>
+
       {/* Indicador de ayuda al usuario */}
       <div className="absolute bottom-4 left-4 z-10 bg-slate-900/90 text-white text-[11px] px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-md">
         <HelpCircle size={14} className="text-sky-300" />
